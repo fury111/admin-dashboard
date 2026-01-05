@@ -9,8 +9,8 @@ Route::get('/dashboard', function () {
     return view('dashboard');
 });
 
-Route::get('/form', function () {
-    return view('form');
+Route::get('/charts', function () {
+    return view('charts');
 });
 
 Route::get('/table', function () {

@@ -1,15 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-    @include('layout.head')
+@include('layout.head')
 
-    <body>
-        @include('layout.header')
+<body id="page-top">
+    <!-- Wrapper -->
+    <div id="wrapper">
+        <!-- Sidebar -->
         @include('layout.sidebar')
 
-        <main class="container mt-4">
-            @yield('content')
-        </main>
+        <!-- Content Wrapper -->
+        <div id="content-wrapper" class="d-flex flex-column">
+            <div id="content">
+                <!-- Topbar / Header (optional) -->
+                @include('layout.header')
 
-        @include('layout.footer')
-    </body>
+                <!-- Main Content -->
+                <div class="container-fluid">
+                    @yield('content')
+                </div>
+            </div>
+
+            <!-- Footer -->
+            
+        </div>
+    </div>
+    @include('layout.footer')
+
+    <!-- Bootstrap core JS (already in footer.blade.php, but ensure it's there) -->
+</body>
 </html>
